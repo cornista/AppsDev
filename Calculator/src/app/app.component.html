@@ -1,0 +1,26 @@
+<div style="text-align: center;"> 
+  
+    <div class="container">
+      <h1>Enter 2 Numbers</h1> 
+      <br>
+      <input (input)="getValue(number1.value)" type="text" #number1/>
+      <br>
+      <br>
+      <input (input)="getValue2(number2.value)" type="text" #number2/>
+    </div>
+
+    <br> 
+    
+    <div class="container">
+      <button (click)="add()" class="btn btn-secondary mr-2">Addition</button>
+      <button (click)="sub()" class="btn btn-secondary mr-2">Subtraction</button>
+      <button (click)="multi()" class="btn btn-secondary mr-2">Multiplication</button>
+      <button (click)="div()" class="btn btn-secondary mr-2">Division</button>
+    </div>
+
+    <br>
+
+    <h4>Result: {{result}}</h4>
+
+
+</div>
